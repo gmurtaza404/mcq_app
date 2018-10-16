@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvUserNotification"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/sendOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:layout_weight="1.99"
+        android:paddingLeft="30dip"
+        android:text="Question Asked: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/sendOption"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:visibility="visible"
+        android:paddingLeft="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        >
+
+        <RadioButton
+            android:id="@+id/r_b_1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option1"
+            android:text="option1" />
+
+        <RadioButton
+            android:id="@+id/r_b_2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option2"
+            android:text="option2" />
+
+        <RadioButton
+            android:id="@+id/r_b_3"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option3"
+            android:text="option3" />
+
+        <RadioButton
+            android:id="@+id/r_b_4"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option4"
+            android:text="option4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/b_send"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/checkBoxSMS"
+        android:layout_alignEnd="@+id/chatStatusIndicator"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:paddingLeft="30dip"
+        android:text="send answer"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bSender"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvUserNotification"
+        android:layout_centerHorizontal="true"
+        android:text="Low-cost channel Application" />
+
+    <ImageView
+        android:id="@+id/chatStatusIndicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/b_send"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/bSender"
+        app:srcCompat="@drawable/clearbackground" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Use Mode 2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chatStatusIndicator"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

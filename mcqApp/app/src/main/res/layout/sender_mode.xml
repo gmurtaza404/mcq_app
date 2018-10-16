@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/pT_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dip"
+        android:text="To: " />
+
+    <EditText
+        android:id="@+id/pT_question"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dip"
+        android:text="Write Question: " />
+
+    <RadioGroup
+        android:id="@+id/radioSex2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:paddingLeft="80dip"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/r_b_11"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option1"
+            android:text="option1" />
+
+        <RadioButton
+            android:id="@+id/r_b_22"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option2"
+            android:text="option2" />
+
+        <RadioButton
+            android:id="@+id/r_b_33"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option3"
+            android:text="option3" />
+
+        <RadioButton
+            android:id="@+id/r_b_44"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1.99"
+            android:tag="option4"
+            android:text="option4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bReset"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="reset"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bCheckAnswer"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="check answer"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bAskQuestion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="ask question"
+        android:visibility="visible" />
+</LinearLayout>
