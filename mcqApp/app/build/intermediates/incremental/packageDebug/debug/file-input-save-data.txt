@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Thu Jun 21 21:34:28 PKT 2018
+#Fri Dec 28 20:02:34 MST 2018
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\ali tariq\\AndroidStudioProjects\\mcqApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\247
+0.base=C\:\\Users\\ali tariq\\AndroidStudioProjects\\master\\mcq_app-master\\mcq_app-master\\mcqApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\247
 0.path=classes.dex
 0.set=DEX
 count=1

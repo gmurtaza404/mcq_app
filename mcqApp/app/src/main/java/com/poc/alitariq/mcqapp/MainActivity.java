@@ -473,19 +473,20 @@ public class MainActivity extends Activity {
             }
         });
 
-        senderMode.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-               Runnable showDialogRun = new Runnable() {
-                  public void run() {
-                    Intent showDialogIntent = new Intent(getBaseContext(), SenderMode.class);
-                    startActivity(showDialogIntent);
-                  }};
-               Handler h = new Handler(Looper.getMainLooper());
-               h.postDelayed(showDialogRun, 100);
-            }
-        });
+        // Uncomment the below code for sender mode screen - (clicking the main screen Title in app will take you to sender screen)
+//        senderMode.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//               Runnable showDialogRun = new Runnable() {
+//                  public void run() {
+//                    Intent showDialogIntent = new Intent(getBaseContext(), SenderMode.class);
+//                    startActivity(showDialogIntent);
+//                  }};
+//               Handler h = new Handler(Looper.getMainLooper());
+//               h.postDelayed(showDialogRun, 100);
+//            }
+//        });
 
     }
 
